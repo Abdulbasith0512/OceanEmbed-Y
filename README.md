@@ -12,6 +12,7 @@ A desktop-focused Next.js frontend for the Neutrons SIH26066 proposal: a scroll-
 
 - [Run Locally](#run-locally)
 - [Architecture](#architecture)
+- [Documentation](#documentation)
 - [Connecting a Backend](#connecting-a-backend)
 - [Rendering and Accessibility](#rendering-and-accessibility)
 - [Scientific and Asset References](#scientific-and-asset-references)
@@ -52,6 +53,16 @@ Browser tests start a production server on port 3100. They use installed Google 
 - `types/ocean.ts`: public frontend interfaces and the proposal's 15 depth queries.
 
 The main dependencies are Next.js, React, TypeScript, Three.js, React Three Fiber, Drei, GSAP, and Tailwind CSS. Fonts and geographic assets are served locally.
+
+## Documentation
+
+- [Technical Architecture](docs/ARCHITECTURE.md) - Deep dive into component interaction and rendering flow.
+- [Testing Strategy](docs/TESTING.md) - Overview of Vitest unit testing and Playwright E2E suites.
+- [Deployment Guide](docs/DEPLOYMENT.md) - Deployment steps for Vercel, Netlify, and Docker environments.
+- [API Integration](docs/API_INTEGRATION.md) - Specification for replacing synthetic mock data with live inference endpoints.
+- [Performance Tuning](docs/PERFORMANCE.md) - WebGL instancing, GLSL shader animations, and ref-based frame optimizations.
+- [Accessibility Guide](docs/ACCESSIBILITY.md) - `prefers-reduced-motion` compliance, visual fallbacks, and keyboard navigation.
+- [FAQ](FAQ.md) - Frequently Asked Questions.
 
 ## Connecting a backend
 
