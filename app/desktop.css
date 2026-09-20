@@ -1,0 +1,268 @@
+/* Desktop composition reserves separate space for narrative, facts, and navigation. */
+html {
+  scroll-behavior: auto;
+}
+.expedition[data-renderer="ready"] .space-fallback {
+  visibility: hidden;
+  opacity: 0;
+}
+.expedition[data-environment="ocean"] .space-fallback {
+  visibility: hidden;
+  opacity: 0;
+}
+.expedition[data-revealed="true"] .depth-gauge {
+  visibility: hidden;
+  opacity: 0;
+}
+.depth-zone {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1.1px;
+  color: #bccfd8;
+  margin-top: 23px;
+  white-space: nowrap;
+}
+.wildlife-note {
+  display: block;
+  color: #9db2bd;
+  font-size: 9px;
+  line-height: 1.7;
+  margin-top: 9px;
+  width: 110px;
+}
+
+@media (min-width: 761px) {
+  .cinematic-viewport {
+    height: 100dvh;
+    min-height: 0;
+  }
+  .expedition {
+    height: 820dvh;
+  }
+  .site-header {
+    height: clamp(66px, 10vh, 92px);
+  }
+  .expedition-topline {
+    top: clamp(99px, 14vh, 135px);
+  }
+  .frame-corner.top-left {
+    top: clamp(98px, 13.8vh, 134px);
+  }
+  .opening-panel {
+    padding: 0;
+  }
+  .hero-copy {
+    inset: clamp(150px, 22vh, 245px) auto clamp(172px, 23vh, 245px) 5.5%;
+    width: min(49vw, 770px);
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero-copy > .eyebrow {
+    margin-bottom: clamp(14px, 2vh, 23px);
+    flex-shrink: 0;
+  }
+  .hero-copy h1 {
+    font-size: clamp(46px, min(5.8vw, 9vh), 100px);
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .hero-copy > p {
+    margin-top: clamp(14px, 2.2vh, 24px);
+    font-size: clamp(11px, 0.9vw, 14px);
+    line-height: 1.75;
+  }
+  .journey-button {
+    margin-top: clamp(17px, 2.6vh, 29px);
+  }
+  .round-arrow {
+    width: clamp(35px, 4.8vh, 43px);
+    height: clamp(35px, 4.8vh, 43px);
+  }
+  .hero-facts {
+    bottom: clamp(86px, 11vh, 119px);
+    padding-top: clamp(15px, 2.3vh, 25px);
+  }
+  .expedition-footer {
+    height: clamp(60px, 8vh, 82px);
+  }
+  .footer-explore {
+    display: inline-flex;
+    font-size: 9px;
+  }
+  .footer-scroll {
+    display: none;
+  }
+  .planet-annotation {
+    top: 66%;
+  }
+  .story-panel:not(.opening-panel) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .story-panel:not(.opening-panel) > h2 {
+    font-size: clamp(43px, min(5.5vw, 9vh), 82px);
+  }
+  .story-panel.reveal-panel > h2 {
+    font-size: clamp(50px, min(7.8vw, 12vh), 112px);
+  }
+  .story-panel.question-panel > h2 {
+    font-size: clamp(50px, min(6.5vw, 11vh), 100px);
+  }
+  .reveal-outputs {
+    margin-block: clamp(24px, 4.7vh, 43px);
+  }
+  .depth-gauge {
+    top: 30%;
+  }
+  .depth-ruler {
+    height: clamp(215px, 30vh, 300px);
+  }
+  .depth-ruler > span {
+    font-size: 8px;
+  }
+  .explorer-shell {
+    height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .explorer-header {
+    height: clamp(62px, 8.5vh, 78px);
+  }
+  .explorer-intro {
+    padding-block: clamp(13px, 2.5vh, 27px);
+    flex-shrink: 0;
+  }
+  .explorer-workspace {
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .map-container {
+    min-height: 0;
+  }
+  .explorer-toolbar,
+  .map-legend,
+  .depth-control {
+    flex-shrink: 0;
+  }
+  .depth-control {
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+  .profile-panel {
+    overflow: hidden;
+    padding-bottom: 15px;
+  }
+  .profile-panel > .profile-body {
+    overflow-y: auto;
+    min-height: 0;
+    flex: 1;
+    padding-right: 5px;
+    scrollbar-width: thin;
+  }
+  .profile-download {
+    flex-shrink: 0;
+    margin-top: 14px;
+  }
+  .profile-heading,
+  .profile-panel > h2,
+  .profile-coordinates,
+  .profile-location,
+  .profile-divider {
+    flex-shrink: 0;
+  }
+  .explorer-footer {
+    padding-block: clamp(10px, 1.8vh, 17px);
+  }
+  .reduced-experience {
+    height: auto;
+  }
+  .reduced-experience .cinematic-viewport {
+    height: auto;
+  }
+  .reduced-experience .hero-copy {
+    inset: auto;
+    position: relative;
+    min-height: 430px;
+  }
+}
+
+@media (min-width: 761px) and (max-height: 700px) {
+  .hero-copy {
+    top: 143px;
+    bottom: 165px;
+  }
+  .hero-copy h1 {
+    font-size: min(5.2vw, 8.4vh);
+  }
+  .hero-copy > .eyebrow {
+    font-size: 8px;
+    margin-bottom: 12px;
+  }
+  .hero-copy > p {
+    font-size: 10px;
+    margin-top: 13px;
+  }
+  .journey-button {
+    margin-top: 15px;
+  }
+  .round-arrow {
+    width: 33px;
+    height: 33px;
+  }
+  .hero-facts {
+    bottom: 83px;
+    padding-top: 14px;
+  }
+  .story-panel:not(.opening-panel) > .eyebrow {
+    font-size: 8px;
+  }
+  .story-panel:not(.opening-panel) > p {
+    font-size: 12px;
+  }
+  .surface-variables {
+    margin-top: 30px;
+    gap: 28px;
+  }
+  .depth-gauge {
+    top: 26%;
+  }
+  .depth-gauge > strong {
+    margin-bottom: 17px;
+  }
+  .depth-ruler {
+    height: 205px;
+  }
+  .depth-ruler > span {
+    font-size: 7px;
+  }
+  .explorer-intro h1 {
+    font-size: 23px;
+  }
+  .explorer-intro p {
+    font-size: 10px;
+  }
+  .explorer-toolbar {
+    min-height: 54px;
+    padding-block: 8px;
+  }
+  .depth-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .depth-control-header {
+    margin-bottom: 10px;
+  }
+  .profile-panel {
+    padding-top: 15px;
+  }
+  .profile-panel h2 {
+    font-size: 18px;
+  }
+  .profile-divider {
+    margin-block: 12px;
+  }
+}
