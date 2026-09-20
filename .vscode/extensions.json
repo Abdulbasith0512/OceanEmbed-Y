@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "lsintlen.vscode-tailwindcss-color-decorator",
+    "ms-playwright.playwright"
+  ]
+}
