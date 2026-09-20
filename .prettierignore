@@ -1,0 +1,9 @@
+.next
+node_modules
+build
+dist
+public
+coverage
+test-results
+package-lock.json
+*.pdf
