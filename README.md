@@ -1,6 +1,22 @@
 # OceanEmbed-X
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Next.js](https://img.shields.io/badge/Next.js-15-black.svg?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB.svg?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg?logo=typescript)
+![Three.js](https://img.shields.io/badge/Three.js-R3F-black.svg?logo=three.js)
+
 A desktop-focused Next.js frontend for the Neutrons SIH26066 proposal: a scroll-driven expedition from orbit to 1000 m, followed by a scientific ocean explorer. This is a frontend demonstration; it contains no backend, authentication, or trained model.
+
+## Table of Contents
+
+- [Run Locally](#run-locally)
+- [Architecture](#architecture)
+- [Connecting a Backend](#connecting-a-backend)
+- [Rendering and Accessibility](#rendering-and-accessibility)
+- [Scientific and Asset References](#scientific-and-asset-references)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Run locally
 
@@ -61,3 +77,11 @@ Pixel ratio is capped, quality can regress under sustained load, expensive postp
 - Coastlines: Natural Earth 1:110m public-domain geography, distributed through `world-atlas`. `node scripts/prepare-geography.mjs` regenerates the checked-in geometry.
 
 Higher-fidelity animal models can replace the procedural geometry without changing scroll or habitat logic. Prefer compressed GLB assets below roughly 15,000 triangles per animal and 1024 px textures; keep shared materials and instancing for schools. No additional asset downloads are required to run the current experience.
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines, [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md) for community standards, and [SECURITY.md](SECURITY.md) for security policy.
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
