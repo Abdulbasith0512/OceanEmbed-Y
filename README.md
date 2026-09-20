@@ -1,4 +1,4 @@
-# OceanEmbed-X
+# OceanEmbed-Y
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-15-black.svg?logo=next.js)
